@@ -3,7 +3,7 @@
 A concept app built in Flutterando Challenge.
 
 ## Screenshot
-- [Product Page](screenshot.gif)
+- [Home Page](screenshot.gif)
 
 ## Getting Started
 
