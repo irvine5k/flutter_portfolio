@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/src/home/home_controller.dart';
 import 'package:flutter_portfolio/src/home/widgets/app_bar_widget.dart';
@@ -75,7 +77,9 @@ class _HomePageState extends State<HomePage> {
                 left: 0,
                 right: 0,
                 bottom: MediaQuery.of(context).size.height *
-                    (showProjects ? 1 : 0.4),
+                    (showProjects
+                        ? 1
+                        : (Platform.isAndroid || Platform.isIOS ? 0.3 : 0.4)),
                 child: HeaderWidget(
                   onTap: () => toggleExpanded(showProjects),
                 ),
